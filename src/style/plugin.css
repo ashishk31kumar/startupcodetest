@@ -1,0 +1,79 @@
+/* =================font awesome css start================= */ 
+/*!
+ * Font Awesome Pro 5.4.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+
+/* =================font awesome css end================= */ 
+
+/* =================custom scroll css start================= */ 
+[data-simplebar]{position:relative;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;align-items:flex-start}
+.simplebar-wrapper{overflow:hidden;width:inherit;height:inherit;max-width:inherit;max-height:inherit}
+.simplebar-mask{direction:inherit;position:absolute;overflow:hidden;padding:0;margin:0;left:0;top:0;bottom:0;right:0;width:auto!important;height:auto!important;z-index:0}
+.simplebar-offset{direction:inherit!important;box-sizing:inherit!important;resize:none!important;position:absolute;top:0;left:0;bottom:0;right:0;padding:0;margin:0;-webkit-overflow-scrolling:touch}
+.simplebar-content-wrapper{direction:inherit;box-sizing:border-box!important;position:relative;display:block;height:100%;width:auto;visibility:visible;max-width:100%;max-height:100%;scrollbar-width:none;-ms-overflow-style:none}
+.simplebar-content-wrapper::-webkit-scrollbar,.simplebar-hide-scrollbar::-webkit-scrollbar{width:0;height:0}
+.simplebar-content:after,.simplebar-content:before{content:' ';display:table}
+.simplebar-placeholder{max-height:100%;max-width:100%;width:100%;pointer-events:none}
+.simplebar-height-auto-observer-wrapper{box-sizing:inherit!important;height:100%;width:100%;max-width:1px;position:relative;float:left;max-height:1px;overflow:hidden;z-index:-1;padding:0;margin:0;pointer-events:none;flex-grow:inherit;flex-shrink:0;flex-basis:0}
+.simplebar-height-auto-observer{box-sizing:inherit;display:block;opacity:0;position:absolute;top:0;left:0;height:1000%;width:1000%;min-height:1px;min-width:1px;overflow:hidden;pointer-events:none;z-index:-1}
+.simplebar-track{z-index:1;position:absolute;right:0;bottom:0;pointer-events:none;overflow:hidden}
+[data-simplebar].simplebar-dragging .simplebar-content{pointer-events:none;user-select:none;-webkit-user-select:none}
+[data-simplebar].simplebar-dragging .simplebar-track{pointer-events:all}
+.simplebar-scrollbar{position:absolute;left:0;right:0;min-height:10px}
+.simplebar-scrollbar:before{position:absolute;content:'';background:#000;border-radius:7px;left:2px;right:2px;opacity:0;transition:opacity .2s linear}
+.simplebar-scrollbar.simplebar-visible:before{opacity:.5;transition:opacity 0s linear}
+.simplebar-track.simplebar-vertical{top:0;width:11px}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{top:2px;bottom:2px}
+.simplebar-track.simplebar-horizontal{left:0;height:11px}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before{height:100%;left:2px;right:2px}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar{right:auto;left:0;top:2px;height:7px;min-height:0;min-width:10px;width:auto}
+[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical{right:auto;left:0}
+.hs-dummy-scrollbar-size{direction:rtl;position:fixed;opacity:0;visibility:hidden;height:500px;width:500px;overflow-y:hidden;overflow-x:scroll}
+.simplebar-hide-scrollbar{position:fixed;left:0;visibility:hidden;overflow-y:scroll;scrollbar-width:none;-ms-overflow-style:none}
+/* =================custom scroll css end================= */ 
+
+/* =================custom selectbox css start================= */ 
+.prettydropdown{position:relative;min-width:72px;display:inline-block;width: 100% !important;background: #eaefff;height: 32px;vertical-align: top;border-radius: 30px;}
+.prettydropdown.loading{min-width:0;}
+.prettydropdown > ul{position:absolute;top:0;left:0; right: 0; background: #eaefff;/* border:1px solid #a9a9a9; */box-sizing:content-box;color: #2e5bff;cursor:pointer;/* font:normal 18px Calibri, sans-serif; */list-style-type:none;margin:0;padding:0;text-align:left;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1;border-radius: 20px;}
+.prettydropdown.loading > ul{visibility:hidden;white-space:nowrap;}
+.prettydropdown > ul:focus, .prettydropdown:not(.disabled) > ul:hover{border-color:#7f7f7f;}
+.prettydropdown:not(.disabled) > ul.active{width:auto;max-height:none !important;border-color:#1e90ff;overflow-x:hidden;overflow-y:auto;z-index:99; border-radius: 10px;}
+.prettydropdown > ul.active:focus{outline:none;}
+.prettydropdown > ul.active.reverse{top:auto;bottom:0;}
+.prettydropdown > ul > li{position:relative;min-width:70px;height: 32px; width: 100% !important; /* border-top:1px solid transparent; *//* border-bottom:1px solid transparent; */box-sizing:border-box;display:none;line-height: 30px;margin:0;padding-left: 15px;font-size: 12px;font-weight: 500;}
+.prettydropdown.loading > ul > li{min-width:0;display:block;padding-right:0.8rem;}
+.prettydropdown > ul:not(.active) > li:not(.selected):first-child{visibility:hidden;}
+.prettydropdown > ul > li:first-child, .prettydropdown > ul.active > li{display:block;}
+.prettydropdown > ul.active > li:not(.label):hover, .prettydropdown > ul.active > li.hover:not(.label), .prettydropdown > ul.active > li:first-child:hover:after{background:#1e90ff;color:#fff;}
+.prettydropdown > ul.active > li.nohover{background:inherit !important;color:inherit !important;}
+.prettydropdown > ul.active > li.hover:before, .prettydropdown > ul.active > li.nohover:after{border-top-color:#fff !important;}
+.prettydropdown > ul.active > li.hover:after, .prettydropdown > ul.active > li.nohover:before{border-top-color:#1e90ff !important;}
+.prettydropdown.arrow > ul > li.selected:before, .prettydropdown.arrow > ul > li.selected:after{position:absolute;top:8px;bottom:0;right: 12px;height: 12px;border: 6px solid transparent;box-sizing:border-box;content:'';display:block;margin:auto;}
+.prettydropdown.arrow.small > ul > li.selected:before, .prettydropdown.arrow.small > ul > li.selected:after{top:4px;height:8px;border-width:4px;}
+.prettydropdown.arrow > ul > li.selected:before{border-top-color: #2e5bff;}
+.prettydropdown.arrow > ul > li.selected:after{top:4px;border-top-color: #e9efff;}
+.prettydropdown.arrow.small > ul > li.selected:after{top:2px;}
+.prettydropdown.arrow.triangle > ul > li.selected:after{content:none;}
+.prettydropdown > ul:hover > li.selected:before{border-top-color:#7f7f7f;}
+.prettydropdown > ul.active > li.selected:before,.prettydropdown > ul.active > li.selected:after{border:none;}
+.prettydropdown > ul:not(.active) > li > span.checked{display:none;}
+.prettydropdown.multiple > ul > li.selected{overflow:hidden;padding-right:2rem;text-overflow:ellipsis;white-space:nowrap;}
+.prettydropdown > ul > li > span.checked{clear:both;float:right;font-weight:bold;margin-right:0.8rem; display: none !important;}
+.prettydropdown > ul > li.label{cursor:default;font-weight:bold;}
+.prettydropdown > ul > li.label:first-child,.prettydropdown.classic > ul > li.label ~ li.selected{border-top:none;}
+.prettydropdown > ul > li.label ~ li:not(.label):not(.selected),.prettydropdown.classic > ul.active > li.label ~ li:not(.label){padding-left:1.6rem;}
+.prettydropdown.classic > ul:not(.active) > li.selected:not(:first-child){position:absolute;top:0;display:block;}
+.prettydropdown.disabled, .prettydropdown > ul > li.disabled{opacity:0.3;}
+.prettydropdown.disabled > ul > li, .prettydropdown > ul > li.disabled{cursor:not-allowed;}
+.prettydropdown.multiple > ul > li.selected + li, .prettydropdown.multiple > ul.reverse > li.selected,.prettydropdown > ul > li.label, .prettydropdown > ul > li.label ~ li.selected{border-top-color:#dedede;}
+.select-has-icon .prettydropdown ul li span{position: absolute;left: 7px;top: 6px;height: 20px;}
+.select-has-icon .prettydropdown ul li span img{vertical-align: top;width: 18px;height: 18px;object-fit: contain;}
+.select-has-icon .prettydropdown > ul > li{padding-left: 35px;}
+
+/* =================custom selectbox css end================= */ 
+
+
+
+
